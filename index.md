@@ -101,7 +101,7 @@ You actually set it up correctly.
 
 Windows users should follow the Windows howto, OS X users should follow the OS X howto, and Linux/BSD/Unix users should follow the Unix howto.
 
-Step One: Install a web server locally
+### Step One: Install a web server locally
 
 First, you need to set up a web server locally, for example nginx or lighttpd (apache is not the best option for anomymity, see Step Three below). Setting up a web server can be complex. We're not going to cover how to set up a web server here. If you get stuck or want to do more, find a friend who can help you. We recommend you install a new separate web server for your onion service, since even if you already have one installed, you may be using it (or want to use it later) for a normal website.
 
@@ -109,7 +109,7 @@ You need to configure your web server so it doesn't give away any information ab
 
 Once your web server is set up, make sure it works: open your browser and go to http://localhost:8080/, where 8080 is the webserver port you chose during setup (you can choose any port, 8080 is just an example). Then try putting a file in the main html directory, and make sure it shows up when you access the site.
 
-Step Two: Configure your onion service
+### Step Two: Configure your onion service
 
 Next, you need to configure your onion service to point to your local web server.
 
@@ -167,7 +167,7 @@ Now that you've restarted Tor, it is busy picking introduction points in the Tor
 
 Try it now: paste the contents of the hostname file into your web browser. If it works, you'll get the html page you set up in step one. If it doesn't work, look in your logs for some hints, and keep playing with it until it works.
 
-Step Three: More advanced tips
+### Step Three: More advanced tips
 
 If you plan to keep your service available for a long time, you might want to make a backup copy of the private_key file somewhere.
 
